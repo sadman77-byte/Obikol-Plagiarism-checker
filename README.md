@@ -1,10 +1,10 @@
 # Obikol-Plagiarism-checker
 
-https://thunderous-vacherin-5a1808.netlify.app/
+https://astounding-panda-69c019.netlify.app/
 
 Obikol Plagiarism Checker (অবিকল প্লেজিয়ারিজম চেকার)
 
-Obikol Plagiarism Checker is a 100% offline-first text, voice, audio, and video plagiarism & AI forensics suite built in a single self-contained HTML application (obikol-plagiarism-checker.html). It analyzes Bengali and English text against pre-indexed and user-uploaded .zip archives, detects AI writing patterns and model signatures, inspects audio/video media locally in the browser, suggests human-sounding alternatives, reads guidance aloud with live transcripts, and triggers automated SMS report workflows via Zapier.
+Obikol Plagiarism Checker is a 100% offline-first text, audio, and video plagiarism & AI forensics suite built in a single self-contained HTML application (obikol-plagiarism-checker.html). It analyzes Bengali and English text against pre-indexed and user-uploaded .zip archives, detects AI writing patterns and model signatures, inspects audio/video media locally in the browser, suggests human-sounding alternatives, reads guidance aloud with live transcripts, and triggers automated SMS report workflows via Zapier.
 
 Key Features
 
@@ -34,19 +34,13 @@ AI Pattern & Model Attribution: Evaluates Bengali and English lexical cues, gram
 
 Color-Coded Highlight View & Humanizer Alternatives: Highlights sentences as copied, AI-patterned, or human-authored, generates human-sounding rewrites, and lets users replace individual sentences or apply all rewrites in one click.
 
-3. Offline Voice Transcription & Spoken Guidance
-
-Speech-to-Text (bn-BD & en-US): Supports voice dictation into the editor or spoken queries in the ভয়েজ (Voice) tab using the browser's Web Speech API (SpeechRecognition / webkitSpeechRecognition) with an animated waveform visualizer.
-
-Text-to-Speech (speechSynthesis): Speaks diagnostic summaries and suggested rewrites aloud while displaying the live transcript on screen.
-
-4. Pro Offline Audio & Video AI Forensics Studio
+3. Pro Offline Audio & Video AI Forensics Studio
 
 Audio Signal Analysis: Decodes uploaded or drag-and-dropped audio files (MP3, WAV, OGG, M4A, etc.) using Web Audio API (AudioContext) to render a dual-layer peak/RMS waveform canvas and inspect digital zero-noise floor, active loudness variation, prosody/pitch consistency, crest factor, silence ratio, and channel/sample-rate characteristics.
 
 5-Frame Video Forensics: Extracts five timestamped frame thumbnails from uploaded or dropped videos (MP4, WEBM, MOV, etc.) and evaluates center-vs-border texture detail and inter-frame pixel changes.
 
-5. Zapier Workflow & Mobile SMS Alert Simulation
+4. Zapier Workflow & Mobile SMS Alert Simulation (Not available now)
 
 3-Step Automation Pipeline (Trigger → Formatter → SMS by Zapier): Automatically formats scan scores, detected archives, and top rewrite suggestions upon scan completion (or on manual trigger).
 
@@ -67,7 +61,7 @@ Open obikol-plagiarism-checker.html directly in a modern web browser (Chrome, Ed
 
 Paste text, load a sample preset, dictate with your microphone, or open 🎬 অডিও / ভিডিও AI চেক to inspect an audio or video file.
 
-Review results across the বিশ্লেষণ (Analysis), বিকল্প (Alternatives), ভয়েজ (Voice), জ্যাপিয়ার SMS (Zapier SMS), and জিপ ফাইল (ZIP Files) tabs.
+Review results across the বিশ্লেষণ (Analysis), বিকল্প (Alternatives), জ্যাপিয়ার SMS (Zapier SMS) (N/A), and জিপ ফাইল (ZIP Files) tabs.
 
 Technical Notes & Limitations
 
@@ -75,7 +69,7 @@ Client-Side Heuristics: All text similarity scoring, stylometric AI indicators, 
 
 Browser API Support: Voice recognition (SpeechRecognition), speech synthesis (speechSynthesis), and local audio decoding (AudioContext) depend on browser support and microphone/media permissions.
 
-SMS Delivery: The built-in Zapier tab simulates the 3-step workflow, updates the mobile inbox preview, maintains run logs, and builds an sms: URI; sending a real carrier SMS requires an active mobile messaging app or a live external Zapier webhook/SMS integration.
+SMS Delivery: The built-in Zapier tab simulates the 3-step workflow, updates the mobile inbox preview, maintains run logs, and builds an sms: URI; sending a real carrier SMS requires an active mobile messaging app or a live external Zapier webhook/SMS integration. This is not available now.
 
 MIT License
 
